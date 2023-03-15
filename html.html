@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <link rel="stylesheet" href="fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
-  <link rel="import" href="component.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Playfair+Display:wght@500&family=Tilt+Prism&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body>
+<body onload="load()">
 
   <section>
 
     <div>
       <ul>
-        <li><a id="change_color_upper_nav" href="#open" onclick="openNav()"><i class="fa-solid fa-bars"></i></a></li>
-        <li><a id="change_color_upper_nav1" href="#basket" onclick="tes()"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        <li><a style="margin-right: 20px;" id="change_color_upper_nav" href="#open" onclick="openNav()"><i class="fa-solid fa-bars"></i></a></li>
+        <li><a id="change_color_upper_nav1" href="#basket"><i class="fa-solid fa-basket-shopping"></i></a></li>
         <li ><a id="change_color_upper_nav2" href="#search"><i class="fa-solid fa-search" onclick="open_search()"></i></a></li>
         <li style="float:left ;"><a id="change_color_upper_nav4" href="#HOME">BLANCOO</a></li>
       </ul>
@@ -39,14 +41,64 @@
     </div>
    </section> 
 
-  <section class="First_section">
-    <video src="D_slide_man_novedades_-1.mp4" autoplay loop muted class="video">
+  <section class="First_section"> 
+  <span id="word" style="font-size: 50px; margin-top: 150px; position: absolute; margin-left: 80px; opacity: 0;">Let’s Create Your… </span> <span id="word2" style="font-size: 90px; margin-top: 240px; position: absolute; margin-left: 80px; opacity: 0;">Own Style with </span>
+  <span id="word3" style="font-size: 90px; margin-top: 340px; position: absolute; margin-left: 80px; opacity: 0;">BLANCOO!</span>
+  <img src="used/clouds.webp" alt="" srcset="">
   </section>   
+  <!-- NEW MEN'S CLOTHING SUMMER COLLECTION 2019
+  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
+  Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. 
+
+
+Better Way to Ship Your Products
+But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+
+REFUND POLICY
+Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+
+PREMIUM PACKAGING
+Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+
+SUPERIOR QUALITY
+Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+-->
 
   <main class="main">
      <section class="Second_section">
-
-    <div>
+      <div class="main_container">
+      </div>
+        <div id="container" class="container">
+          <img src="used/second main.webp".png" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">JACKETS</div>
+          </div>
+        </div>
+        
+        <div id="container1" class="container1">
+          <img src="used/second main2.jpg".png" alt="Avatar" class="image">
+          <div class="overlay1">
+            <div class="text">GLASSES</div>
+          </div>
+        </div>
+  
+        <div id="container2" class="container2">
+          <img src="used/second main3.jpg" alt="Avatar" class="image">
+          <div class="overlay1">
+            <div class="text">FOOT WEAR</div>
+          </div>
+        </div>
+        <div id="container3" class="container3">
+          <img src="used/second main4.webp".png" alt="Avatar " class= "image" >
+          <div class="overlay">
+            <div class="text">WATCHES</div>
+          </div>
+        </div>
+        <div id="container4" class="container4">
+          <img src="used/second main5.png".png" alt="Avatar">
+        </div>
+    </section>
+    <!-- <div>
       <img   class="mySlides fade" style="width: 100%;   height: 100%;" src="used/photo5.jpg" alt="">
       <img   class="mySlides fade" style="width: 100%;   height: 100%;" src=".JPG" alt="">
       <img   class="mySlides fade" style="width: 100%;   height: 100%;" src="used/photo7.jpg" alt="">
@@ -57,14 +109,14 @@
     <h5 >Super value deals</h5>
     <h5 style="top: 320px; color: black;">on all products</h5>
     <h5 style="top: 600px; color: white;">save more with coupons & up to 20% OFF!</h5>
-    <h6>Shop Now</h6>
-  </section>
+    <h6>Shop Now</h6> -->
+ 
 
   <section id="Third_section" class="Third_section">
-    <img  style="width: 100%; height: 100%;" src="used/photo2.jpg" alt=""> 
+    
   </section> 
 
-<section class="Fourth_section">
+<!-- <section class="Fourth_section">
   <p style="position: relative; top: 20px;left: 710px;"> -20% OFFERS </p>
 
   <div class="product1">
@@ -92,8 +144,7 @@
 
       <section class="main4"><img class="photo4" src="used/photo4.jpg" alt=""></section>
       <div class="main5"> <video src="D_slide_man_basics_0217.mp4" autoplay loop muted class="video2"></video></div> 
-    </section>
-  </section>
+    </section> -->
   </main>
  
 

@@ -1,21 +1,181 @@
+
+
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: grey; 
+   border-radius: 100px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: black; 
+ }
+.main_container
+{
+
+   position:absolute;
+   background-color: black;
+   width: 1200px;
+   height: 800px;
+   top: 830px;
+}
+.container {
+   cursor:pointer;
+   translate: -1000px 0px;
+   transition: 1s ease-in-out;
+   opacity: 0;
+   position:absolute;
+   left: 520px;
+   top: 850px;
+ }
+ .image {
+width: 350px;
+height: 300px;
+ }
+
+ .container1 {
+   cursor:pointer;
+    translate: -1000px 0px;
+    transition:  1s ease-in-out;
+    opacity: 0;
+    position:absolute;
+    right: 80px;
+    top: 850px;
+  }
+ 
+  .overlay1 {
+   position: absolute;
+   bottom: 0;
+   left: 0%;
+   right: 100%;
+   background-color: rgba(0,0,0,0.4);
+   overflow: hidden;
+   width: 0;
+   height: 100%;
+   transition: .5s ease;
+  }
+
+  .container1:hover .overlay1 {
+   width: 100%;
+   right: 0;
+  }
+ 
+
+
+ .overlay {
+   position: absolute;
+   bottom: 0;
+   left: 100%;
+   right: 0%;
+   background-color: rgba(0,0,0,0.4);
+   overflow: hidden;
+   width: 0;
+   height: 100%;
+   transition: .5s ease;
+ }
+
+ .container2 {
+   cursor:pointer;
+   translate: -1000px 0px;
+   transition:  1s ease-in-out;
+   opacity: 0;
+   position:absolute;
+   right: 80px;
+   top: 1200px;
+ }
+ 
+ .container2:hover .overlay1 {
+   width: 100%;
+   left: 0;
+ }
+ .container:hover .overlay {
+   width: 100%;
+   left: 0;
+ }
+ 
+ .container3 {
+   cursor:pointer;
+   translate: -1000px 0px;
+   transition:  1s ease-in-out;
+   opacity: 0;
+   position:absolute;
+   left: 520px;
+   top: 1200px;
+ }
+ .container3:hover .overlay {
+   width: 100%;
+   left: 0;
+ }
+
+ .text {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   white-space: nowrap;
+ }
+
+ .container4
+ {
+   translate: -1000px 0px;
+   transition:  1s ease-in-out;
+   opacity: 0;
+   position: absolute;
+   top: 800px;
+   height: 800px;
+   width: 450px;
+ }
+ .container4 img{
+   width: 100%;
+   height: 100%;
+ }
 .First_section
 {
+   background-image: url(used/mainphoto1.webp);
+   background-size: cover;
+   background-attachment:fixed;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 700px;
    overflow: hidden;
-   left: 0%;
-   right: 0%;
-   top: 0%;
-   position: fixed;
+   margin: 0%;
+}
+.First_section img
+{
+   position: absolute;
+   top: 580px;
+   width: 1510px;
 }
 .Second_section
 {
-   background-color: white;
-   height: 1000px;
-   margin: 0%;
-   top: 900px;
+   height: 500px;
    overflow: hidden;
-   left: 0%;
-   right: 0%;
+}
+.second_main
+{
+ 
    position: absolute;
+   right: 10px;
+}
+.second_main2
+{
+   top: 800px;
+   position: absolute;
+   right: 520px;
+   width: 450px;
+   height: 440px;
+}
+.second_main3
+{
+   top: 800px;
+   position: absolute;
+   left: 10px;
 }
 .Second_section h1 
 {
@@ -78,18 +238,19 @@ position: absolute;
 
 body
 {
-   font-family: Garamond, serif;
+   font-family: 'Playfair Display', serif;
    height: auto;
    overflow: auto;
 }
 
  ul {
+
      list-style-type: none;
-     padding: 0;
      overflow:hidden;
      position: fixed;
-     top: 0%;
      width: 100%;
+     top: -10px;
+     left: -30px;
      z-index: 10;
  }
 
@@ -97,8 +258,8 @@ body
      float: right;
  }
 
- li a {
-
+ li a 
+ {
      display: block;
      color: white;
      text-align: center;
@@ -237,7 +398,7 @@ li a:hover
 .product1
 {
    position:absolute;
-   height: 550px;
+   height: 400px;
    margin-left: 40px;
    margin-top: 30px;
    background-color: white;
@@ -255,11 +416,10 @@ li a:hover
 .product2
 {
    position:absolute;
-   height: 550px;
+   height: 400px;
    margin-left: 570px;
    margin-top: 30px;
    background-color: white;
-   width: 25%;
 }
 .product2 p
 {
@@ -274,11 +434,10 @@ li a:hover
 .product3
 {
    position:absolute;
-   height: 550px;
+   height: 400px;
    margin-left: 1100px;
    margin-top: 30px;
    background-color: white;
-   width: 25%;
 }
 .product3 p
 {
