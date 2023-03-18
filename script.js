@@ -17,8 +17,9 @@ window.onscroll = function() {change_style_when_scroll()};
 function change_style_when_scroll() {
 
 
-  if (document.documentElement.scrollTop > 550 && document.documentElement.scrollTop < 1000) 
+  if (document.documentElement.scrollTop > 550) 
   {
+
         document.getElementById("container").style.opacity = "1";  
         document.getElementById("container").style.translate = "0px"; 
 
@@ -32,7 +33,8 @@ function change_style_when_scroll() {
         document.getElementById("container3").style.translate = "0px"; 
         
         document.getElementById("container4").style.opacity = "1";  
-        document.getElementById("container4").style.translate = "0px";      
+        document.getElementById("container4").style.translate = "0px";  
+          
 
         document.getElementById("change_color_upper_nav").className = "change_color_upper_navtoblack";
         document.getElementById("change_color_upper_nav1").className = "change_color_upper_navtoblack";
@@ -109,7 +111,7 @@ function close_search()
   document.getElementById("change_color_upper_nav1").className = "change_color_upper_navtowhite";
   document.getElementById("change_color_upper_nav2").className = "change_color_upper_navtowhite";
   document.getElementById("change_color_upper_nav4").className = "change_color_upper_navtowhite";
-  document.body.style.overflow= "auto";
+  document.body.style.overflowY= "auto";
   document.getElementById("change_color_upper_nav").style.display = "block";
   document.getElementById("change_color_upper_nav1").style.display = "block";
   document.getElementById("change_color_upper_nav2").style.display = "block";

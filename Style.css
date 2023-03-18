@@ -1,5 +1,14 @@
-
-
+/* all wsite */
+body
+{
+   font-family: 'Playfair Display', serif;
+   height: auto;
+   overflow-x: hidden;
+}
+image
+ {
+   image-rendering: high-quality;
+ }
 ::-webkit-scrollbar {
    width: 10px;
  }
@@ -13,37 +22,345 @@
  ::-webkit-scrollbar-thumb:hover {
    background: black; 
  }
-.main_container
+ /* end */
+
+ /*top nav bar */
+  ul {
+ 
+      list-style-type: none;
+      overflow:hidden;
+      position: fixed;
+      width: 100%;
+      top: -10px;
+      left: -30px;
+      z-index: 10;
+  }
+ 
+  li {
+      float: right;
+  }
+ 
+  li a 
+  {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 17px 16px;
+      text-decoration: none;
+  }
+ .change_color_upper_navtoblack 
+ {
+    color: black;
+ }
+ .change_color_upper_navtowhite 
+  {
+      color: white;
+  }
+ li a:hover
+  {
+     text-shadow:2px 2px 2px #111;
+     padding: 17px 16px;
+  }
+  /* end */
+
+  /* search nav */
+  input[type=text] 
+  {
+   width: 400px;
+   border-bottom: 5px solid #b4b4b4;
+   font-size: 15px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   padding: 12px 20px 5px 20px;
+   transition: width 0.4s ease-in-out;
+   background-color: transparent;
+   margin-top: 180px;
+   margin-left: 200px;
+   font-size: 30px;
+   color: black;
+ }
+ input[type=text]:focus 
+ {
+   width: 1000px;
+   outline: 0px  solid transparent;
+   color: #818181;
+ }
+  .search_nav
+  {
+    height: 0%;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+  }
+ 
+  .search_nav .closebtn 
+  {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+    text-decoration: none;  
+  }
+ /* end */
+
+ /* right nav bar */
+  .sidenav 
+  {
+    text-align: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a 
+  {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover 
+  {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn 
+  {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+/*end  */
+@media screen and (max-width: 800px) 
 {
 
-   position:absolute;
-   background-color: black;
-   width: 1200px;
+ }
+
+/* section 1*/
+.First_section
+{
+   background-image: url(used/website_main_photo.png);
+   background-size:cover;
+   background-attachment:fixed;
+   width: 100%;
    height: 800px;
-   top: 830px;
+   margin: 0%;
 }
-.container {
+.First_section img
+{
+   position: absolute;
+   top: 680px;
+   width: 100%; 
+}
+/* end */
+
+/* section 2 */
+.Second_section
+{
+  
+   height: 1200px;
+}
+.Second_section_span1
+ {
+   
+   font-size: 15px;
+   position: absolute; 
+   left: 500px; 
+   top: 1230px;  
+   font-weight: bold; 
+   z-index: 1;
+ }
+ .Second_section_span2
+ {
+   font-size: 15px;position: absolute; left: 710px; top: 1230px;  font-weight: bold; 
+   z-index: 1;
+ }
+ .Second_section_span3
+ {
+   font-size: 15px;position: absolute; left: 920px; top: 1230px; font-weight: bold; 
+   z-index: 1;
+ }
+ .Second_section_span3:hover ,.Second_section_span2:hover, .Second_section_span1:hover
+ {
+   cursor:pointer;
+    border-style: groove;
+    border-color: #111;
+    border-top: 0px;
+    border-left: 0px; border-right: 0px;
+    padding-bottom:18px;
+ }
+ .Second_section_foreveryday_photo1
+ {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   width: 400px;
+   position:absolute;
+   height: 400px;
+   left: 150px; 
+   top: 1300px; 
+   background-color: white;
+ }
+.Second_section_foreveryday_photo1 img
+{
+   width: 100%;
+   height: 100%;
+}
+.Second_section_foreveryday_text1
+{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   top: 400px;
+   width: 400px;
+   position: absolute;
+   height: 120px;
+   background-color: white;
+}
+.Second_section_foreveryday_text1 p
+{
+
+   font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: rgb(33, 42, 47);
+    position: relative;
+   left: 10px;
+
+}
+.Second_section_foreveryday_text1 img
+{
+   position: absolute;
+   top: 0px;
+   left: -30px;
+}
+.Second_section_foreveryday_photo2
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  position:absolute;
+  height: 400px;
+  left: 570px; 
+  top: 1300px; 
+  background-color: white;
+}
+.Second_section_foreveryday_photo2 img
+{
+  width: 100%;
+  height: 100%;
+}
+.Second_section_foreveryday_text2 img
+{
+   position: absolute;
+   top: 0px;
+   left: -30px;
+}
+.Second_section_foreveryday_text2
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 400px;
+  width: 400px;
+  position: absolute;
+  height: 120px;
+  background-color: white;
+}
+.Second_section_foreveryday_text2 p
+{
+  list-style: square;
+  font-weight: 700;
+   font-size: 18px;
+   letter-spacing: 0.5px;
+   color: rgb(33, 42, 47);
+   position: relative;
+  left: 10px;
+
+}
+
+.Second_section_foreveryday_photo3
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  position:absolute;
+  height: 400px;
+  left: 990px; 
+  top: 1300px; 
+  background-color: white;
+}
+.Second_section_foreveryday_photo3 img
+{
+  width: 100%;
+  height: 100%;
+}
+.Second_section_foreveryday_text3 img
+{
+   position: absolute;
+   top: 0px;
+   left: -30px;
+}
+.Second_section_foreveryday_text3
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 400px;
+  width: 400px;
+  position: absolute;
+  height: 120px;
+  background-color: white;
+}
+.Second_section_foreveryday_text3 p
+{
+  list-style: square;
+  font-weight: 700;
+   font-size: 18px;
+   letter-spacing: 0.5px;
+   color: rgb(33, 42, 47);
+   position: relative;
+  left: 10px;
+
+}
+/* end */
+
+.container
+{
    cursor:pointer;
    translate: -1000px 0px;
    transition: 1s ease-in-out;
    opacity: 0;
    position:absolute;
-   left: 520px;
-   top: 850px;
+   left: 600px;
+   top: 970px;
  }
- .image {
-width: 350px;
-height: 300px;
+ .image 
+ {
+   width: 350px;
+   height: 300px;
  }
 
- .container1 {
-   cursor:pointer;
+ .container1 
+ {
+    cursor:pointer;
     translate: -1000px 0px;
     transition:  1s ease-in-out;
     opacity: 0;
     position:absolute;
     right: 80px;
-    top: 850px;
+    top: 970px;
   }
  
   .overlay1 {
@@ -84,12 +401,12 @@ height: 300px;
    opacity: 0;
    position:absolute;
    right: 80px;
-   top: 1200px;
+   top: 1330px;
  }
  
  .container2:hover .overlay1 {
    width: 100%;
-   left: 0;
+   right: 0;
  }
  .container:hover .overlay {
    width: 100%;
@@ -102,8 +419,8 @@ height: 300px;
    transition:  1s ease-in-out;
    opacity: 0;
    position:absolute;
-   left: 520px;
-   top: 1200px;
+   left: 600px;
+   top: 1330px;
  }
  .container3:hover .overlay {
    width: 100%;
@@ -126,40 +443,18 @@ height: 300px;
    transition:  1s ease-in-out;
    opacity: 0;
    position: absolute;
-   top: 800px;
-   height: 800px;
-   width: 450px;
+   top: 950px;
+   height: 700px;
+   width: 500px;
  }
- .container4 img{
+ .container4 video{
    width: 100%;
    height: 100%;
  }
-.First_section
-{
-   background-image: url(used/mainphoto1.webp);
-   background-size: cover;
-   background-attachment:fixed;
-   left: 0px;
-   top: 0px;
-   width: 100%;
-   height: 700px;
-   overflow: hidden;
-   margin: 0%;
-}
-.First_section img
-{
-   position: absolute;
-   top: 580px;
-   width: 1510px;
-}
-.Second_section
-{
-   height: 500px;
-   overflow: hidden;
-}
+
+
 .second_main
 {
- 
    position: absolute;
    right: 10px;
 }
@@ -236,165 +531,8 @@ position: absolute;
    position:absolute;
 }
 
-body
-{
-   font-family: 'Playfair Display', serif;
-   height: auto;
-   overflow: auto;
-}
-
- ul {
-
-     list-style-type: none;
-     overflow:hidden;
-     position: fixed;
-     width: 100%;
-     top: -10px;
-     left: -30px;
-     z-index: 10;
- }
-
- li {
-     float: right;
- }
-
- li a 
- {
-     display: block;
-     color: white;
-     text-align: center;
-     padding: 17px 16px;
-     text-decoration: none;
- }
-.change_color_upper_navtoblack {
-   color: black;
-}
-.change_color_upper_navtowhite  {
-   color: white;
-}
-li a:hover
- {
-    text-shadow:2px 2px 2px #111;
-    padding: 17px 16px;
- }
- .search_nav
- {
-   height: 0%;
-   width: 100%;
-   right: 0%;
-   left: 0%;
-   bottom: 0%;
-   position: fixed;
-   z-index: 1;
-   background-color: white;
-   overflow: hidden;
-   transition: 1s ease-in-out;
- }
-
- .search_nav .closebtn {
-   position: absolute;
-   top: 50px;
-   right: 25px;
-   font-size: 36px;
-   margin-left: 50px;
-   color: black;
-   text-decoration: none;
-   
- }
-
- .sidenav {
-   text-align: center;
-   height: 100%;
-   width: 0;
-   position: fixed;
-   z-index: 11;
-   top: 0;
-   right: 0;
-   background-color: #111;
-   overflow-x: hidden;
-   transition: 0.5s;
-   padding-top: 60px;
- }
- 
- .sidenav a {
-   padding: 8px 8px 8px 32px;
-   text-decoration: none;
-   font-size: 25px;
-   color: #818181;
-   display: block;
-   transition: 0.3s;
- }
- 
- .sidenav a:hover {
-   color: #f1f1f1;
- }
- 
- .sidenav .closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px;
-   margin-left: 50px;
- }
- @media only screen and (min-width: 375px) and (max-width: 700px) {
-   /* For tablets: */
-   .Second_section
-   {
-      height: auto;
-      width: 100%;
-   }
-   .Second_section h1
-   {
-      width: 100%;
-   }
-   .Second_section h5
-   {
-      width: 100%;
-   }
-   .Second_section h6
-   {
-      width: 100%;
-   }
-   .Third_section
-   {
-      height: auto;
-      width: 100%;
-   }
- }
- @media only screen and (min-width: 768px) 
- {
-   .Second_section
-   {
-      width: 100%;
-   }
-   .Third_section
-   {
-      height: 100%;
-      width: 100%;
-   }
- }
- input[type=text] {
-   width: 400px;
-   border-bottom: 5px solid #b4b4b4;
-   font-size: 15px;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   padding: 12px 20px 5px 20px;
-   transition: width 0.4s ease-in-out;
-   background-color: transparent;
-   margin-top: 180px;
-   margin-left: 200px;
-   font-size: 30px;
-   color: black;
- }
 
  
- input[type=text]:focus {
-   width: 1000px;
-   outline: 0px  solid transparent;
-   color: #818181;
- }
 .product1
 {
    position:absolute;
