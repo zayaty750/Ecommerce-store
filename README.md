@@ -8,7 +8,7 @@ and numerous other appealing features.
 It is choosing the gender to redirect the user to right place.
 
 #Second page(HOME.html)
-It is the main page for the selected gender containing sales, most sold items, new collection and our stores location.
+It is the main page for the selected gender containing sales, most sold items, new collection and our store locations.
 
 #Third page(Cart.html)
 It is where the user will see what is selected among the items that have to be paid for but before paying the user has to log in first if he has already created an account
