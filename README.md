@@ -5,14 +5,13 @@ and your shopping cart. The most appealing aspect of the Blancoo website is user
 and numerous other appealing features.
 
 #First page(index.html)
-It is choosing the gender to redirect the user to right place.
+It is the choice of gender to redirect the user to the right place.
 
 #Second page(HOME.html)
-It is the main page for the selected gender containing sales, most sold items, new collection and our store locations.
+It is the gender specific home page that contains sales, most items sold, new collections and etc.
 
 #Third page(Cart.html)
-It is where the user will see what is selected among the items that have to be paid for but before paying the user has to log in first if he has already created an account
-Otherwise he will register, so we can create an ID for him in the site's database, to keep track of his style and what he's looking for to help him find those items faster without searching for them,
+It is where the user will see what is selected among the items that have to be paid for but before paying the user has to log in first if he has already created an account,Otherwise he will register,so we can create an ID for him in the site's database, to keep track of his style and what he's looking for to help him find those items faster without searching for them,
 and show offers that will be applied with him.
 
 #Fourth and Fifth page(loginPage.html and SignUp.html)
@@ -23,4 +22,4 @@ It's the only page with store analytics, inventory, active users, total users on
 naturally.
 
 #Seventh page(Product.html)
-It is the page that will be divided into section to differentiate between Kinds of clothes(page for women , men and kids).
+It is the page that will be divided into section to differentiate between Kinds of clothes(page for women's clothing , men's clothes and kids clothes).
