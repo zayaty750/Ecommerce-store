@@ -5,35 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css".css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Blancoo | Register</title>
 
 </head>
 
 <body>
-    <div class="main-parent">
-        <div class="form-wrap">
-            <h1><span>Sign</span>IN</h1>
-            <form action="" method="get">
-                <div class="single-input">
-                <input type="email" name="Email" placeholder="Email Address">
-                </div>
-                <br>
-                <div class="single-input">
-                <input type="password" name="Password" placeholder="Password">
-                </div>
-                <br>
-                <a href="HOME.html">               <div class="Submit-button">
-                    Login
-                </div></a>
- 
-                <br>
-                <div class="account-create">
-                    <a href="#">Forget Password</a>
-                    <a href="SignUp.html">Create New Account</a>
-                </div>
-            </form>
+
+    <nav class="py-2 border-bottom bg-black m-0">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="HOME.html" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light px-2">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light px-2">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light px-2">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item"><a href="Cart.html" class="nav-link link-light px-2"><i class="bi-basket-fill"></i></a></li>
+            <li class="nav-item"><a href="SignUp.html" class="nav-link link-light px-2"><i class="bi-person"></i></a></li>
+            <li class="nav-item"><a href="admin.html" class="nav-link link-light px-2"><i class="bi-bar-chart-line"></i></a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-light px-2" onclick="openNav()" ><i class="bi-gear-fill"></i></a></li>
+          </ul>
         </div>
+      </nav>
+
+        <div class="container-fluid "  >
+            <div class="row no-gutter">
+                <!-- The image half -->
+                <div class="col-md-6 d-none d-md-flex bg-image"></div>
+                <!-- The content half -->
+                <div class="col-md-6 bg-light ">
+                    <div class="login d-flex align-items-center py-5">
+
+                        <!-- Demo content-->
+                        <div class="container d-none" id="Login">
+                            <div class="row">
+                                <div class="col-lg-10 col-xl-7 mx-auto">
+                                    <h3 class="display-4">Split page!</h3>
+                                    <p class="text-muted mb-4">Create a login split page using Bootstrap 4.</p>
+                                    <form>
+                                        <div class="form-group mb-3">
+                                            <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                            <label for="customCheck1" class="custom-control-label">Remember password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                        <div class="text-center d-flex justify-content-between mt-4"><p>New Account<a class="font-italic text-muted" onclick="show_login()"> 
+                                               click here <u></u></a></p></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                        <div class="container d-block" id="Register">
+                            <div class="row">
+                                <div class="col-lg-10 col-xl-7 mx-auto">
+                                    <h3 class="display-4">Split page!</h3>
+                                    <p class="text-muted mb-4">Create a login split page using Bootstrap 4.</p>
+                                    <form>
+                                        <div class="form-group mb-3 ">
+                                            <input  type="" placeholder="Full Name"  class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input id="" type="email" placeholder="Email address" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input id="" type="password" placeholder="Password" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input id="" type="password" placeholder="Confirm Password"  class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input id="" type="checkbox" checked class="custom-control-input">
+                                            <label for="" class="custom-control-label">Remember password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" >Register</button>
+                                        <button  class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" onclick="show_login()" >Rter</button>
+                                        <div class="text-center d-flex justify-content-between mt-4"><p>Already have an account<a class="font-italic text-muted" onclick="show_login()" > 
+                                          click here <u></u></a></p></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div><!-- End -->
+                    </div>
+                </div><!-- End -->
+        
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="containerr">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                  </ul>
+        
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">ordr status</a></li>
+                    <li><a href="#">payment options</a></li>
+                  </ul>
+        
+                </div>
+                <div class="footer-col">
+                  <h4>online shop</h4>
+                  <ul>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dresses</a></li>
+                    <li><a href="#">tops</a></li>
+                    <li><a href="#">jackets</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="bi-facebook"></i></a>
+                    <a href="#"><i class="bi-twitter"></i></a>
+                    <a href="#"><i class="bi-instagram"></i></a>
+                    <a href="#"><i class="bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
 </body>
 
 </html>

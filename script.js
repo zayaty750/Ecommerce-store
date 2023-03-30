@@ -19,7 +19,7 @@ function change_style_when_scroll() {
 
   if (document.documentElement.scrollTop > 550) 
   {
-
+        
         document.getElementById("container").style.opacity = "1";  
         document.getElementById("container").style.translate = "0px"; 
 
@@ -233,4 +233,16 @@ sidebarBtn.onclick = function () {
         sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
     } else
         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+
+
+function show_login()
+{
+
+    document.getElementById("Register").style.display = "none";
+}
+function show_registration()
+{
+    document.getElementById("Login").style.display = "none";
+    document.getElementById("Register").style.display = "block";
 }

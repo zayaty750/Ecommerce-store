@@ -4,216 +4,132 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BLANKOO</title>
-
-
+    
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="used/icon.png" type="image/x-icon">
      <script src="script.js"></script>
-      
+     <title>Blankoo | Home</title>
+
   </head>
 
   <body>
- 
-
-    <!-- nav bar -->
-    <nav class="py-2 border-bottom">
+    
+     <!-- img-fluid l sora gwa l container-->
+    <!-- mg margin start -->
+     <!-- nav bar -->
+    <nav class="py-2 border-bottom bg-black">
       <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
         </ul>
         <ul class="nav">
-          <li class="nav-item"><a href="Cart.html" class="nav-link link-dark px-2"><i class="bi-basket-fill"></i></a></li>
-          <li class="nav-item"><a href="SignUp.html" class="nav-link link-dark px-2"><i class="bi-person"></i></a></li>
-          <li class="nav-item"><a href="admin.html" class="nav-link link-dark px-2"><i class="bi-bar-chart-line"></i></a></li>
-          <li class="nav-item"><a  class="nav-link link-dark px-2" ><i class="bi-gear-fill"></i></a></li>
+          <li class="nav-item"><a href="Cart.html" class="nav-link link-light px-2"><i class="bi-basket-fill"></i></a></li>
+          <li class="nav-item"><a href="loginPage.html" class="nav-link link-light px-2"><i class="bi-person"></i></a></li>
+          <li class="nav-item"><a href="admin.html" class="nav-link link-light px-2"><i class="bi-bar-chart-line"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-light px-2" onclick="openNav()" ><i class="bi-gear-fill"></i></a></li>
         </ul>
       </div>
     </nav>
 
-    <header class="py-3 mb-4 border-bottom ">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-          <span class="fs-4">BLANKOO</span>
+    <header class="py-3 bg-light sticky-top  z-2">
+      <div class="container d-flex flex-wrap justify-content-center ">
+        <a href="" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <span class="fs-4 ">BLANKOO</span>
+          <span class="m-3 ">MEN</span>
+          <span class=" ">WOMEN</span>
         </a>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search"  >
         </form>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block " >              
+          <i class="bi bi-search" onclick="open_search()"></i>
+        </div>
       </div>
-    </header>
+
+      </header>
+      <!-- <div class=" bg-light shadow w-50 position-sticky  m-0 p-3 ">
+        <span>men</span>
+        <p>jackets</p>
+        <p>jackets</p>
+        <p>jackets</p>
+        <span>Women</span>
+        <p>jackets</p>
+        <p>jackets</p>
+        <p>jackets</p>
+      </div> -->
+
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="#close" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="search_nav" class="search_nav w-100">
+      <a href="#close" class="closebtn" onclick="close_search()">&times;</a>
+      <input type="text" name="search" placeholder="Write here">
+    </div>
 
     <!-- carousel  -->
-    <div id="carouselExampleCaptions" class="carousel slide ">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section class="" >
+      <div class="w-100 d-block  ">
+        <img src="used/sliders/slider1.jpg" alt="" class=" img-fluid " >
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="used/website_main_photo.png" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
+
+
+
   
     <!--section 1 -->
-    <div class="container-fluid  w-100 min-vh-75 p-0">
-      <div class="shadow-lg d-flex justify-content-between " style="height: 700px;">
-        <div class="card  rounded-5 rounded-top-0 shadow-lg align-self-center" style="width: 18rem; margin: 20px;" >
-          <img src="used/second_section_photo1.jpg " class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-                  <div class="card  rounded-5 rounded-top-0 shadow-lg align-self-center " style="width: 18rem; margin: 10px; ">
-            <img src="used/second_section_photo1.jpg"  class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-            </div>
-          </div>
-        <div class="card  rounded-5 rounded-top-0 shadow-lg align-self-center " style="width: 18rem; margin: 10px; ">
-          <img src="used/second_section_photo1.jpg"  class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-          </div>
-        </div>
-          <div class="card  rounded-5 rounded-top-0 shadow-lg align-self-center " style="width: 18rem; margin: 10px; ">
-            <img src="used/second_section_photo1.jpg"  class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-            </div>
-          </div>
-            <div class="card  rounded-5 rounded-top-0 shadow-lg align-self-center " style="width: 18rem; margin: 10px; ">
-              <img src="used/second_section_photo1.jpg" class="card-img-top" alt="...">
-              <div class="card-body bg">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-              </div>
-            </div>
-      </div>  
-    </div>
 
-    <div class="container-fluid w-100 min-vh-75 p-0">
-      <div class=" shadow-lg d-flex justify-content-between bg-black " style="height: 700px;">
-        
-      </div>
-      </div>
-  
+    <section class=" bg-black event ">
+
+        <img src="used/clouds.webp" alt="" class=" w-100  m-0" style="transform: rotate(179.9deg);">
+
 
     
-      <div class="container " id="custom-cards">
-        <h2 class="pb-2 border-bottom">OUR FAVORITES</h2>
-    
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(used/category/p2.jpg);background-size: contain; background-attachment: fixed ;  background-position: center; ">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    	<div class="container">
+    		<div class="row align-items-start">
+          <div class="col mt-5">
+            <img src="used/test.png" alt="" class="" style="height: 500px;">
           </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg  " style="background-image: url(used/category/p2.jpg); background-size: contain;background-attachment: fixed ; background-position: center; ">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('used/category/p2.jpg'); background-size: contain; background-attachment: fixed ;  background-position: center; ">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+    			<div class="col mt-5">
+    				<div class="text">
+	            <h2 class="mb-4 text-light">New Women's Clothing Summer Collection 2019</h2>
+	            <p class="text-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+	            <p><a href="#" class="btn btn-light px-4 py-3">Shop now</a></p>
+    				</div>
+    			</div>
+    		</div>
 
-    <section class="section-products">
-      <div class="container">
+          <div class="row align-items-start">
+            <div class="col mt-5 mb-5">
+              <img src="used/test.png" alt="" class="" style="height: 500px;">
+            </div>
+            <div class="col mt-5">
+              <div class="text">
+                <h2 class="mb-4 text-light">New Women's Clothing Summer Collection 2019</h2>
+                <p class="text-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                <p><a href="#" class="btn btn-light px-4 py-3">Shop now</a></p>
+              </div>
+            </div>
+            </div>
+            </div>
+            <img src="used/clouds.webp" alt="" class="w-100 h-auto m-0">
+    </section>
+
+    <section class="section-products  ">
+      <div class="container ">
           <div class="row justify-content-center text-center">
               <div class="col-md-8 col-lg-6">
                   <div class="header">
@@ -228,10 +144,10 @@
                   <div id="product-1" class="single-product">
                       <div class="part-1">
                           <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
                           </ul>
                       </div>
                       <div class="part-2">
@@ -297,7 +213,7 @@
               </div>
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-1" class="single-product">
+                  <div id="product" class="single-product">
                       <div class="part-1">
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>

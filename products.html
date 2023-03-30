@@ -12,35 +12,45 @@
 </head>
 <body>
 
-    <nav class="py-2 border-bottom">
-        <div class="container d-flex flex-wrap">
-          <ul class="nav me-auto">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
-          </ul>
-          <ul class="nav">
-            <li class="nav-item"><a href="Cart.html" class="nav-link link-dark px-2"><i class="bi-basket-fill"></i></a></li>
-            <li class="nav-item"><a href="SignUp.html" class="nav-link link-dark px-2"><i class="bi-person"></i></a></li>
-            <li class="nav-item"><a href="admin.html" class="nav-link link-dark px-2"><i class="bi-bar-chart-line"></i></a></li>
-            <li class="nav-item"><a  class="nav-link link-dark px-2" ><i class="bi-gear-fill"></i></a></li>
-          </ul>
-        </div>
-      </nav>
   
-      <header class="py-3 mb-4 border-bottom ">
-        <div class="container d-flex flex-wrap justify-content-center">
-          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-            <span class="fs-4">BLANKOO</span>
-          </a>
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-          </form>
-        </div>
-      </header>
+    <nav class="py-2 border-bottom bg-black">
+		<div class="container d-flex flex-wrap">
+		  <ul class="nav me-auto">
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2">Features</a></li>
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2">Pricing</a></li>
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2">FAQs</a></li>
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
+		  </ul>
+		  <ul class="nav">
+			<li class="nav-item"><a href="Cart.html" class="nav-link link-light px-2"><i class="bi-basket-fill"></i></a></li>
+			<li class="nav-item"><a href="loginPage.html" class="nav-link link-light px-2"><i class="bi-person"></i></a></li>
+			<li class="nav-item"><a href="admin.html" class="nav-link link-light px-2"><i class="bi-bar-chart-line"></i></a></li>
+			<li class="nav-item"><a href="#" class="nav-link link-light px-2" onclick="openNav()" ><i class="bi-gear-fill"></i></a></li>
+		  </ul>
+		</div>
+	  </nav>
+  
+	  <header class="py-3 border-bottom shadow sticky-top bg-light z-2">
+		<div class="container d-flex flex-wrap justify-content-center">
+		  <a href="" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none" onmouseenter="">
+			<span class="fs-4 ">BLANKOO</span>
+			<span class="m-3 ">MEN</span>
+			<span class=" ">WOMEN</span>
+		  </a>
+		  <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
+			<input type="search" class="form-control" placeholder="Search..." aria-label="Search"  >
+		  </form>
+		  <!-- ba4d l small hide -->
+		  <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block " >              
+			<i class="bi bi-search" onclick="open_search()"></i>
+		  </div>
+		  
+		</div>
+	  </header>
+
       
+	  
     <section class="section-products">
 		<div class="container">
 				<div class="row justify-content-center text-center">

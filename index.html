@@ -5,24 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Blancoo | Online Fashion</title>
+    <link rel="shortcut icon" href="used/icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <h1 class="title">Blancoo</h1>
+    <header class="py-3 border-bottom shadow sticky-top bg-light z-2">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a href="" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <span class="fs-4 ">BLANKOO</span>
+            <span class="m-3 ">MEN</span>
+            <span class=" ">WOMEN</span>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search"  >
+          </form>
+          <!-- ba4d l small hide -->
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block " >              
+            <i class="bi bi-search" onclick="open_search()"></i>
+          </div>
+          
+        </div>
+      </header>
+    <h1 class="title bi-bootstrap-fill"></h1>
+    <h2 class="title" >Blancoo</h2>
+    <section class="container-fluid mb-5" >
+        <div class="row " >
+            <div class="col  align-self-center">
+              <a href="HOME.html"> <img src="Pictures/MenMain.jpg" alt="" class="  img-fluid" ></a>
+                
+            </div>
+            <div class="col  align-self-center ">
+                <a href="HOME.html"> <img src="Pictures/WomenMain.jpg" alt="" class="  img-fluid" ></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="containerr">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
     
-    <div class="images">
-        <a href="SignUp.html"><div class="image-container fade">
-            
-            <img src="./Pictures/MenMain.jpg" alt="">
-           </div></a>
-
-           <a href="SignUp.html"> <div class="image-container fade2">
-            <img src="./Pictures/WomenMain.jpg" alt="">
-        </div></a>
-
-    </div>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">ordr status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+    
+            </div>
+            <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                <li><a href="#">pants</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">dresses</a></li>
+                <li><a href="#">tops</a></li>
+                <li><a href="#">jackets</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="bi-facebook"></i></a>
+                <a href="#"><i class="bi-twitter"></i></a>
+                <a href="#"><i class="bi-instagram"></i></a>
+                <a href="#"><i class="bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
 </body>
 
 </html>
