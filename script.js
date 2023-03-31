@@ -2,7 +2,10 @@
  
 window.addEventListener("load", function(){
     document.getElementById("preloading").style.display = "none";
+    document.body.style.overflow = "none";
 })
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "20%";
     document.getElementById("main").style.marginRight = "250px";
