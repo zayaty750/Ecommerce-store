@@ -1,68 +1,94 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="">
-    <link rel="stylesheet" href="Style.css">
-    <script src="script.js"></script>
 
-    <title>Blankoo | Home</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
+  <link rel="stylesheet" href="styles/bootsrap.v0.5.Icons.css">
+  <link rel="stylesheet" href="styles/bootstrap.v0.5.css">
+  <link rel="stylesheet" href="styles/boxicons.css">
+  <link rel="stylesheet" href="styles/Style.css">
 
-  <body>
-    
-     <!-- img-fluid l sora gwa l container-->
-    <!-- mg margin start -->
-     <!-- nav bar -->
-     <div class="text-center bg-black vh-100 w-100 position-fixed z-3" id="preloading">
-      <div>
-        <h1 class="bx bxl-bootstrap" style="margin-top: 300px;"></h1>
-      </div>
-      <div>
-        <h1>BLANCOO</h1>
-      </div>
-        <div class="spinner-border text-light" role="status" style="margin-top: 200px;">
-          <span class="visually-hidden ">Loading...</span>
-        </div>
+
+  <script src="script.js"></script>
+
+  <title>Blancoo | Online Fashion</title>
+  <link rel="shortcut icon" href="used/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <div class="text-center bg-black vh-100 w-100 position-fixed z-3" id="preloading">
+    <div>
+      <h1 class="bx bxl-bootstrap" style="margin-top: 300px;"></h1>
     </div>
-    
-    <nav class="py-2 border-bottom bg-black">
-      <div class="container d-flex flex-wrap">
-        <ul class="nav me-auto">
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
-        </ul>
-        <ul class="nav">
-          <li class="nav-item"><a href="Cart.html" class="nav-link link-light px-2"><i class="bi-basket-fill"></i></a></li>
-          <li class="nav-item"><a href="loginPage.html" class="nav-link link-light px-2"><i class="bi-person"></i></a></li>
-          <li class="nav-item"><a href="admin.html" class="nav-link link-light px-2"><i class="bi-bar-chart-line"></i></a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-light px-2" onclick="openNav()" ><i class="bi-gear-fill"></i></a></li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <h1>BLANCOO</h1>
+    </div>
+    <div class="spinner-border text-light" role="status" style="margin-top: 200px;">
+      <span class="visually-hidden ">Loading...</span>
+    </div>
+  </div>
 
-    <header class="py-3 bg-light sticky-top  z-2  ">
-      <div class="container d-flex flex-wrap justify-content-center ">
-        <a href="" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-          <span class="fs-4 ">BLANKOO</span>
-          <span class="m-3 ">MEN</span>
-          <span class=" ">WOMEN</span>
-        </a>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search"  >
-        </form>
-        <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block " >              
-          <i class="bi bi-search" onclick="open_search()"></i>
-        </div>
+  <nav class="py-2 border-bottom bg-black">
+    <div class="container d-block d-md-none " >
+      <div class="text-center" id="open_top_nav_bar">
+        <a href="#"class="bi-chevron-bar-down link-light px-5 p-5"  onclick="openNav()"></a>
       </div>
 
-      </header>
-      <!-- <div class=" bg-light shadow w-50 position-sticky  m-0 p-3 ">
+      <div id="mySidenav" class="sidenav ">
+      <a href="#close" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    </div>
+    <div class="container d-flex flex-wrap ">
+      <ul class="nav me-auto">
+  
+       <div class=" d-none d-md-flex">
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2 active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">FAQs</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link link-light px-2">About Us</a></li>
+       </div>
+      </ul>
+      <ul class="nav  d-none d-md-flex">
+        <li class="nav-item"><a href="Cart.html" class="nav-link link-light px-2"><i class="bi-basket-fill"></i></a>
+        </li>
+        <li class="nav-item"><a href="loginPage.html" class="nav-link link-light px-2"><i class="bi-person"></i></a>
+        </li>
+        <li class="nav-item"><a href="admin.html" class="nav-link link-light px-2"><i class="bi-bar-chart-line"></i></a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2" ><i
+              class="bi-gear-fill"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-3 bg-light sticky-md-top z-2 shadow">
+    <div class="container d-flex flex-wrap justify-content-center ">
+      <a href=""
+        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none flex-sm-row flex-column">
+        <span><i class="d-sm-none d-block  bi-bootstrap-fill"></i></span>
+        <span class="fs-4 d-sm-block d-none">BLANKOO</span>
+        <span class="m-3">MEN</span>
+        <span class=" ">WOMEN</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
+      <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block ">
+        <i class="bi bi-search" onclick="open_search()"></i>
+      </div>
+    </div>
+
+  </header>
+  <!-- <div class=" bg-light shadow w-50 position-sticky  m-0 p-3 ">
         <span>men</span>
         <p>jackets</p>
         <p>jackets</p>
@@ -75,278 +101,326 @@
 
 
 
-    <div id="mySidenav" class="sidenav">
-      <a href="#close" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+
+ 
+
+  <div id="search_nav" class="search_nav w-100">
+    <a href="#close" class="closebtn" onclick="close_search()">&times;</a>
+    <input type="text" name="search" placeholder="Write here">
+  </div>
+
+  <!-- carousel  -->
+  <section>
+    <div class="container">
+      <video src="styles/used/D_slide_man_novedades_-1.mp4" alt="" class=" img-fluid" autoplay loop muted>
     </div>
-
-    <div id="search_nav" class="search_nav w-100">
-      <a href="#close" class="closebtn" onclick="close_search()">&times;</a>
-      <input type="text" name="search" placeholder="Write here">
-    </div>
-
-    <!-- carousel  -->
-    <section class="" >
-      <div class="w-100 d-block  ">
-        <img src="used/sliders/slider1.jpg" alt="" class=" img-fluid " >
-      </div>
-    </section>
-
-
-
-  
-    <!--section 1 -->
-
-    <section class=" bg-black event ">
-
-        <img src="used/clouds.webp" alt="" class=" w-100  m-0" style="transform: rotate(179.9deg);">
-
-
-    
-    	<div class="container">
-    		<div class="row align-items-start">
-          <div class="col mt-5">
-            <img src="used/test.png" alt="" class="" style="height: 500px;">
-          </div>
-    			<div class="col mt-5">
-    				<div class="text">
-	            <h2 class="mb-4 text-light">New Women's Clothing Summer Collection 2019</h2>
-	            <p class="text-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-	            <p><a href="#" class="btn btn-light px-4 py-3">Shop now</a></p>
-    				</div>
-    			</div>
-    		</div>
-
-          <div class="row align-items-start">
-            <div class="col mt-5 mb-5">
-              <img src="used/test.png" alt="" class="" style="height: 500px;">
-            </div>
-            <div class="col mt-5">
-              <div class="text">
-                <h2 class="mb-4 text-light">New Women's Clothing Summer Collection 2019</h2>
-                <p class="text-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p><a href="#" class="btn btn-light px-4 py-3">Shop now</a></p>
-              </div>
-            </div>
-            </div>
-            </div>
-            <img src="used/clouds.webp" alt="" class="w-100 h-auto m-0">
-    </section>
-
-    <section class="section-products  ">
-      <div class="container ">
-          <div class="row justify-content-center text-center">
-              <div class="col-md-8 col-lg-6">
-                  <div class="header">
-                      <h3>Featured Product</h3>
-                      <h2>Popular Products</h2>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-1" class="single-product">
-                      <div class="part-1">
-                          <ul>
-                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
-                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
-                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
-                              <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-2" class="single-product">
-                      <div class="part-1">
-                          <span class="discount">15% off</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-3" class="single-product">
-                      <div class="part-1">
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-4" class="single-product">
-                      <div class="part-1">
-                          <span class="new">new</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product" class="single-product">
-                      <div class="part-1">
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-2" class="single-product">
-                      <div class="part-1">
-                          <span class="discount">15% off</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-3" class="single-product">
-                      <div class="part-1">
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-4" class="single-product">
-                      <div class="part-1">
-                          <span class="new">new</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="part-2">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
   </section>
 
 
-    <footer class="footer">
-    
-      <div class="containerr">
-        <div class="row">
-          <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-  
+  <section class="section-products  ">
+    <div class="container ">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="header">
+            <h3>Featured Product</h3>
+            <h2>Popular Products</h2>
           </div>
-          <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">ordr status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
-  
+        </div>
+      </div>
+      <div class="row">
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-1" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+                <li><a href="#"><i class="bi bi-plus-circle"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-old-price">$79.99</h4>
+              <h4 class="product-price">$49.99</h4>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="#">pants</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dresses</a></li>
-              <li><a href="#">tops</a></li>
-              <li><a href="#">jackets</a></li>
-            </ul>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-2" class="single-product">
+            <div class="part-1">
+              <span class="discount">15% off</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-price">$49.99</h4>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="bi-facebook"></i></a>
-              <a href="#"><i class="bi-twitter"></i></a>
-              <a href="#"><i class="bi-instagram"></i></a>
-              <a href="#"><i class="bi-github"></i></a>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-3" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-old-price">$79.99</h4>
+              <h4 class="product-price">$49.99</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-4" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-price">$49.99</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-old-price">$79.99</h4>
+              <h4 class="product-price">$49.99</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-2" class="single-product">
+            <div class="part-1">
+              <span class="discount">15% off</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-price">$49.99</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-3" class="single-product">
+            <div class="part-1">
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-old-price">$79.99</h4>
+              <h4 class="product-price">$49.99</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Single Product -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div id="product-4" class="single-product">
+            <div class="part-1">
+              <span class="new">new</span>
+              <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-expand"></i></a></li>
+              </ul>
+            </div>
+            <div class="part-2">
+              <h3 class="product-title">Here Product Title</h3>
+              <h4 class="product-price">$49.99</h4>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+  <section class="mt-5 mb-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row shadow">
+        <div class="container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37809421838!2d31.217264617826068!3d30.059482028208137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1680637378497!5m2!1sen!2seg"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container mt-5">
+          <h3 class="text-center mb-5">Contact Us</h3>
+          <form action="" methode="get">
+            <div class="form-group mb-3">
+              <input id="" type="text" placeholder="Your Name"
+                class="form-control rounded-pill border-0 shadow-sm px-4 text-black">
+            </div>
+            <div class="form-group mb-3">
+              <input id="" type="text" placeholder="Email Address"
+                class="form-control rounded-pill border-0 shadow-sm px-4 text-black">
+            </div>
+            <div class="form-group mb-3">
+              <input id="" type="text" placeholder="Subject"
+                class="form-control rounded-pill border-0 shadow-sm px-4 text-black">
+            </div>
+            <div class="form-group mb-5">
+              <textarea id="" type="" placeholder="Description"  class="form-control border-0 shadow-sm px-4 text-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center  ">
+              <button type="submit" class="btn btn-dark w-100">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="bottom-0 bg-black">
+  <div class="row pt-5 pb-5 container">
+
+      <div class=" col-md-2 col-6 footer-col container">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class=" col-md-2 col-6 footer-col container">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">ordr status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+
+      </div>
+      <div class=" col-md-2 col-6  footer-col container">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">pants</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dresses</a></li>
+          <li><a href="#">tops</a></li>
+          <li><a href="#">jackets</a></li>
+        </ul>
+      </div>
+      <div class="col-md-1 col-6  footer-col container">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="bi-facebook"></i></a>
+          <a href="#"><i class="bi-twitter"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
+          <a href="#"><i class="bi-github"></i></a>
+        </div>
+      </div>
+</section>
+
+<section class="bottom-0 p-3">
+  <div class="d-flex justify-content-between container">
+    <div>
+      <h6><a href="">Terms and conditions of purchase</a> • <a href="">Privacy Policy</a> • <a href="">Cookie Policy </a> • <a href="">configure cookies</a> • <a href="">site map</a></h6>
+    </div>
+    <div class="ps-2">
+      <i class="bi-c-circle-fill">2023 Blankoo</i>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
 
 
 
 </html>
+
+<!-- <section class="bottom-0 bg-black">
+  <div class="container d-flex flex-column flex-md-row pt-5 pb-5 align-items-center align-items-md-start">
+      <div class="footer-col ">
+        <h1 class="bx bxl-bootstrap"> </h1>
+      </div>
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">ordr status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">pants</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dresses</a></li>
+          <li><a href="#">tops</a></li>
+          <li><a href="#">jackets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="bi-facebook"></i></a>
+          <a href="#"><i class="bi-twitter"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
+          <a href="#"><i class="bi-github"></i></a>
+        </div>
+      </div>
+</section> -->
