@@ -1,20 +1,49 @@
 
- 
+
 window.addEventListener("load", function(){
     document.getElementById("preloading").style.display = "none";
     document.body.style.overflow = "none";
 })
 
+function slider_to_right()
+{
+  
+if( document.getElementById("product_slider").scrollLeft >= 300)
+{
+     document.getElementById("product_slider").scrollLeft += 308 ;
+      let x = document.getElementById("product_slider").scrollLeft;
+      console.log(x);
+}   
+else
+{
+    document.getElementById("product_slider").scrollLeft += 300 ; 
+}
+}
+function slider_to_left()
+{
+    if( document.getElementById("product_slider").scrollLeft >= 300)
+    {
+         document.getElementById("product_slider").scrollLeft -= 308 ;
+          let x = document.getElementById("product_slider").scrollLeft;
+          console.log(x);
+    }   
+    else
+    {
+        document.getElementById("product_slider").scrollLeft -= 300 ; 
+    }
+
+}
 
 function openNav() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("open_top_nav_bar").style.display = "none";
+    document.getElementById("mySidenav").style.height = "100%";
+    document.body.style.overflowY = "hidden";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("open_top_nav_bar").style.display = "block";
+    document.getElementById("mySidenav").style.height = "0%";
+    document.body.style.overflowY = "visible";
   }
+
 
 let myindex = 0;
 function showSlides() 
