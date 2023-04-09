@@ -5,33 +5,14 @@ window.addEventListener("load", function(){
     document.body.style.overflow = "none";
 })
 
-function slider_to_right()
+let First_container_width =  308;
+function slider_to_right(product_slider)
 {
-  
-if( document.getElementById("product_slider").scrollLeft >= 300)
-{
-     document.getElementById("product_slider").scrollLeft += 308 ;
-      let x = document.getElementById("product_slider").scrollLeft;
-      console.log(x);
-}   
-else
-{
-    document.getElementById("product_slider").scrollLeft += 300 ; 
+    product_slider.scrollLeft += First_container_width;
 }
-}
-function slider_to_left()
+function slider_to_left(product_slider)
 {
-    if( document.getElementById("product_slider").scrollLeft >= 300)
-    {
-         document.getElementById("product_slider").scrollLeft -= 308 ;
-          let x = document.getElementById("product_slider").scrollLeft;
-          console.log(x);
-    }   
-    else
-    {
-        document.getElementById("product_slider").scrollLeft -= 300 ; 
-    }
-
+    product_slider.scrollLeft -= First_container_width;
 }
 
 function openNav() {

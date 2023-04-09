@@ -13,9 +13,9 @@
     width: 10px;
  }
  
- .product_slider::-webkit-scrollbar-thumb {
-    background: transparent;
- }
+ .product_slider::-webkit-scrollbar {
+    display: none;
+}
  /* Handle */
  ::-webkit-scrollbar-thumb {
     background: grey;
