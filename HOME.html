@@ -144,7 +144,7 @@
   <!-- carousel  -->
   <section>
     <div class="container">
-      <video src="used/D_slide_man_novedades_-1.mp4" alt="" class=" img-fluid" autoplay loop muted>
+         <video src="used/D_slide_man_novedades_-1.mp4" alt="" class=" img-fluid" autoplay loop muted>
     </div>
   </section>
   <!-- end -->
@@ -165,9 +165,13 @@
 
   <!-- carousel product slider  -->
   <section class="container d-flex">
-    <div class=" ">
-      <button onclick="slider_to_left(product_slider1)" class="fa-sharp fa-solid fa-arrow-left bg-black link-light rounded-pill p-3"></button>
+
+    <div class=" d-none d-sm-block" >
+      <div>
+      <button onclick="slider_to_left(product_slider1)" class="fa-sharp fa-solid fa-arrow-left bg-black link-light rounded-pill p-3 "></button>
     </div>
+  </div>
+
     <div class="d-flex overflow-auto  pt-5 pb-5 product_slider bg-white" id="product_slider1">
       <div class="me-2">
         <div class="card-body shadow rounded " style="width: 300px;">
@@ -725,7 +729,7 @@
         </div>
       </div>
     </div>
-    <div class=" ">
+    <div class="  d-none d-sm-block  ">
       <button onclick="slider_to_right(product_slider1)" class="fa-sharp fa-solid fa-arrow-right bg-black link-light rounded-pill p-3"></button>
     </div>
   </section>
@@ -1897,7 +1901,7 @@
   </section>
   <!-- end -->
 
-  <div class="bottom-0 position-fixed ps-2 pb-2  ">
+  <div class="position-fixed ps-2 pb-2 " style="right: 20px; bottom: 30px ;" id="top_function_button" onclick="topFunction()" onscroll="when_scroll()">
     <button class="fa-solid fa-arrow-up border-0 bg-black link-light rounded-2 p-2"></button>
   </div>
 
