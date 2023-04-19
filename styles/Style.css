@@ -3,33 +3,72 @@
 @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 
 @media only screen and (max-width: 600px) {
-    .mobile-width {
+    .mobile-products_width {
       width: 200px;
     }
-    .mobile-width img {
-        width: 200px;
-        height: auto;
-      }
 
-      
+      .advertising
+      {
+        height: 300px;
+      }
+      .product_card
+      {
+          height: 200px;
+      }
+      .category
+      {
+          height: 400px;
+      }
   }
   @media only screen and (min-width: 768px) {
-    .mobile-width {
+    .mobile-products_width {
         width: 317px;
         
       }
-      .mobile-width img {
-        width:  317px;
-        height: auto;
-      }
 
+      .advertising
+      {
+        height: 600px;
+      }
+      .product_card
+    {
+        height: 300px;
+    }
+    .category
+    {
+        height: 400px;
+    }
   }
   /* Animation */
   .img-hover-zoom { /* Modify this according to your need */
     overflow: hidden; /* Removing this will break the effects */
   }
 
+ .advertising
+ {
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+ }
+.product_card
+{
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
 
+}
+.category
+{
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+}
   .img-hover-zoom--quick-zoom img {
     transform-origin: 1 1;
     transition: transform .25s, visibility .25s ease-in;
@@ -42,6 +81,11 @@
   }
   /*  */
 
+  .product_slider a
+  {
+    text-decoration: none;
+    color: black;
+  }
 * {
 
     margin: 0;

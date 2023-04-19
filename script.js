@@ -1,5 +1,4 @@
 
-
 window.addEventListener("load", function(){
     document.getElementById("preloading").style.display = "none";
     document.body.style.overflow = "none";
@@ -20,14 +19,91 @@ window.addEventListener("load", function(){
   } 
   
   First_container_width =  325*4;
+  let first_slider =0;
+  let clicks = 0;
+  let current_slider;
  function slider_to_right(product_slider)
   {
-    product_slider.scrollLeft += First_container_width ;   
+    if(first_slider == 0 || current_slider == document.getElementById(product_slider.id))
+    {
+      if(clicks < 2)
+      {
+      clicks ++;
+      if(clicks == 1)
+      {
+        product_slider.scrollLeft = First_container_width;    
+      } 
+      else if(clicks == 2)
+      {
+        product_slider.scrollLeft = First_container_width*2 ;  
+      } 
+      else if(clicks == 3)
+      {
+        product_slider.scrollLeft = First_container_width*3;  
+      } 
+
+      // condition byda5alny 3ala l if 3altol 3ashan asgl awl container 
+      first_slider ++;
+      //a5er container kont feh
+      current_slider = document.getElementById(product_slider.id);
+    }
+    }
+    else
+    { 
+      
+      first_slider=0;
+      clicks = 0;
+
+      clicks ++;
+      if(clicks == 1)
+      {
+        product_slider.scrollLeft = First_container_width ;    
+      } 
+      else if(clicks == 2)
+      {
+        product_slider.scrollLeft = First_container_width*2 ;  
+      } 
+      else if(clicks == 3)
+      {
+        product_slider.scrollLeft = First_container_width*3 ;  
+      } 
+      else if(clicks == 4)
+      {
+        product_slider.scrollLeft = First_container_width*4 ;  
+      } 
+      current_slider.scrollLeft = 0;
+      console.log("current_slider:- "+current_slider+"first_slider:- "+first_slider +"  "+clicks);
+    }
+    
+ 
   }
  
  function slider_to_left(product_slider)
   {
-    product_slider.scrollLeft -= First_container_width ;   
+    if( current_slider == document.getElementById(product_slider.id))
+    {
+      if(clicks > 0)
+      {
+      clicks --;
+      if(clicks == 0)
+      {
+        product_slider.scrollLeft = 0;    
+      } 
+      else if(clicks == 1)
+      {
+        product_slider.scrollLeft = First_container_width ;  
+      } 
+      else if(clicks == 2)
+      {
+        product_slider.scrollLeft = First_container_width*2;  
+      } 
+      else if(clicks == 3)
+      {
+        product_slider.scrollLeft = First_container_width*3;  
+      } 
+    }
+    }
+
   }
 
   function openNav() 
