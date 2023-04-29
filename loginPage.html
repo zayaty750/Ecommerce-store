@@ -86,59 +86,15 @@
       </ul>
     </div>
   </nav>
-  <!-- pc second nav -->
-  <header class="py-3 bg-white sticky-md-top z-2 shadow">
-    <div class="container d-flex flex-wrap justify-content-center ">
-      <a href=""
-        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none  d-none d-md-flex  ">
-        <span class="fs-4">BLANKOO</span>
-        <span class="m-3">MEN</span>
-        <span class=" ">WOMEN</span>
-      </a>
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-sm-none d-md-none" role="search">
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-      </form>
-      <div class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 d-none d-sm-block ">
-        <i class="bi bi-search" onclick="open_search()"></i>
-      </div>
-    </div>
-  </header>
-  <!-- search nav for pc -->
-  <div id="search_nav" class="search_nav w-100">
-    <a href="#close" class="closebtn" onclick="close_search()">&times;</a>
-    <input type="text" name="search" placeholder="Write here">
-    <div class="row  container mt-5 ms-5">
-      <div class="col ps-5">
-        <h4>Category</h4>
-        <div class="ps-5">
-          <h5>Men</h5>
-          <div class="ps-5">
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-          </div>
 
-          <h5>Women</h5>
-          <div class="ps-5">
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-            <h6>jackets</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-        <div class="container-fluid "  >
+
+        <div class="container-fluid p-5"  >
             <div class="row no-gutter">
                 <!-- The image half -->
-                <div class="col-md-6 d-none d-md-flex bg-image"></div>
+                <div class="col-md-6 d-none d-md-flex bg-image" style="background-image: url(used/photo5.jpg);">
+
+                </div>
                 <!-- The content half -->
                 <div class="col-md-6 bg-light ">
                     <div class="login d-flex align-items-center py-5">
@@ -160,13 +116,14 @@
                                             <input id="customCheck1" type="checkbox" checked class="custom-control-input">
                                             <label for="customCheck1" class="custom-control-label">Remember password</label>
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                                        <div class="text-center d-flex justify-content-between mt-4"><p>New Account<a class="font-italic text-muted" onclick="show_login()"> 
+                                        <button type="submit" class="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                                        <div class="text-center d-flex justify-content-between mt-4"><p>New Account<a class="font-italic text-muted" > 
                                                click here <u></u></a></p></div>
                                     </form>
                                 </div>
                             </div>
-                        </div><!-- End -->
+                        </div>
+                        <!-- End -->
 
                         <div class="container d-block" id="Register">
                             <div class="row">
@@ -175,23 +132,22 @@
                                     <p class="text-muted mb-4">Create a login split page using Bootstrap 4.</p>
                                     <form>
                                         <div class="form-group mb-3 ">
-                                            <input  type="" placeholder="Full Name"  class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                            <input  type="" placeholder="Full Name"  class="form-control rounded-pill border-0 shadow-sm px-4">
                                         </div>
                                         <div class="form-group mb-3">
                                             <input id="" type="email" placeholder="Email address" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
                                         </div>
                                         <div class="form-group mb-3">
-                                            <input id="" type="password" placeholder="Password" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                            <input id="" type="password" placeholder="Password" class="form-control rounded-pill border-0 shadow-sm px-4 ">
                                         </div>
                                         <div class="form-group mb-3">
-                                            <input id="" type="password" placeholder="Confirm Password"  class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                            <input id="" type="password" placeholder="Confirm Password"  class="form-control rounded-pill border-0 shadow-sm px-4 ">
                                         </div>
                                         <div class="custom-control custom-checkbox mb-3">
                                             <input id="" type="checkbox" checked class="custom-control-input">
                                             <label for="" class="custom-control-label">Remember password</label>
                                         </div>
-                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" >Register</button>
-                                        <button  class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm" onclick="show_login()" >Rter</button>
+                                        <button type="submit" class="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm" >Register</button>
                                         <div class="text-center d-flex justify-content-between mt-4"><p>Already have an account<a class="font-italic text-muted" onclick="show_login()" > 
                                           click here <u></u></a></p></div>
                                     </form>

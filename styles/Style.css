@@ -32,7 +32,7 @@
         
     }
     .mobile-image-wrapper-1 {
-        height: 50vw;
+        height: 45vw;
         display: flex;
         align-items: center;
         justify-items: center;
@@ -78,6 +78,25 @@
 
 }
 
+.single_product_image_for_mobile img
+{
+    width: 100%;
+    height: 150vw;
+    align-items: center;
+    justify-items: center;
+}
+.product_image
+{
+    
+    justify-content: center;   
+}
+.product_image img
+{
+    width: 100%;
+    height: 40vw;
+    align-items: center;
+    justify-items: center;
+}
 .mobile-cards-wrapper 
 {    
     display:flex;
@@ -100,7 +119,8 @@
 }
 
 
-.image-wrapper {
+.image-wrapper
+{
     height: 22vw;
     display: flex;
     align-items: center;
